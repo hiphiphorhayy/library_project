@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Library</h1>
+            <nav>
+                <ul>
+                    <li><button class="btn" id="home">Home</button></li>
+                    <li><button class="btn" id="login">Login</button></li>
+                    <li><button class="btn" id="register">Register</button></li>
+                    <li><button class="btn" id="logout">Logout</button></li>
+                    <li><button class="btn" id="profile">Profile</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main container">
+        <button class="btn btn-add" id="addBookBtn">Add Book</button>
+        <div class="books-grid" id="booksGrid"></div>
+    </main>
+    <footer>
+        <footer>
+            <p>
+                Copyright © 2024 George Montoya
+            </p>
+        </footer>
+    </footer>
+    <div class="modal" id="addBookModal">
+        <form class="add-book-form" id="addBookForm">
+            <h3>Add New Book</h3>
+            <input type="text" class="input" placeholder="Title" id="title" required maxlength="100"/>
+            <p class="error-msg" id="errorMsg"></p>
+            <input type="text" class="input" placeholder="Author" id="author" required maxlength="100"/>
+            <input type="number" class="input" placeholder="0" id="pages" required min="0"/>
+            <div class="is-read">
+                <label for="is-read">Have you read it?</label>
+                <input type="checkbox" id="isRead">
+            </div>
+            <button class="btn btn-light-green" type="submit">Add Book</button>
+        </form>
+    </div>
+    <div class="overlay" id="overlay"></div>
+</body>
+</html>
