@@ -173,7 +173,7 @@ const toggleRead = (e) => {
 
 addBookBtn.onclick = openAddBookModal;
 overlay.onclick = closeAllModals;
-addBookForm.onsubmit.addBook;
+addBookForm.addEventListener('submit', addBook);
 window.onkeydown = handleKeyboardInput;
 
 
